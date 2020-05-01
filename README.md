@@ -30,11 +30,11 @@ plugins {
 Option 1:
 ```groovy
 dependencies {
-	scripts group: '{{groupA}}', name: '{{nameA}}', version: '{{versionB}', ext: 'gradle'
+	scripts group: '{{groupA}}', name: '{{nameA}}', version: '{{versionB}}', ext: 'gradle'
 }
 ```
 ```groovy
-applyfrom '{{groupA}}:{{nameA}}:{{versionB}'
+applyfrom '{{groupA}}:{{nameA}}:{{versionB}}'
 ```
 
 # Changes

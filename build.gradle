@@ -2,8 +2,6 @@ plugins {
     id "com.gradle.plugin-publish" version "0.11.0"
 }
 
-group 'com.sharp.gradle'
-
 apply plugin: 'groovy'
 apply plugin: 'java-gradle-plugin'
 apply plugin: 'maven'
@@ -11,6 +9,8 @@ apply plugin: 'idea'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
+group 'com.sharp.gradle'
+version "1.0.0"
 
 repositories {
     mavenLocal()
@@ -33,7 +33,7 @@ gradlePlugin {
             id = 'com.sharp.applyfrom'
             displayName = 'Plugin for apply from dependencies file'
             description = 'Due to the limitation of gradle apply from limitation, apply from https endpoint can not using authentication. so using this plugin can apply from a gradle script file from dependencies.'
-            implementationClass = 'org.ysb33r.gradle.gradletest.GradleTestPlugin'
+            implementationClass = 'com.sharp.gradle.applyfrom.ApplyFromPlugin'
         }
     }
 }
