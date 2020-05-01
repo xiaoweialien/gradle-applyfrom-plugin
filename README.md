@@ -12,7 +12,7 @@ buildscript {
 		}
 	}
 	dependencies {
-		classpath "gradle.plugin.com.sharp.gradle:gradle-applyfrom-plugin:1.0"
+		classpath "gradle.plugin.com.sharp.gradle:gradle-applyfrom-plugin:1.0.1"
 	}
 }
 
@@ -22,7 +22,7 @@ apply plugin: "com.sharp.applyfrom"
 Gradle 2.1 or newer:
 ```groovy
 plugins {
-	id "com.sharp.applyfrom" version "1.0"
+	id "com.sharp.applyfrom" version "1.0.1"
 }
 ```
 
